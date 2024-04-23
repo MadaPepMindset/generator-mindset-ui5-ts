@@ -1,0 +1,1 @@
+# generator-mindset-ui5-ts
