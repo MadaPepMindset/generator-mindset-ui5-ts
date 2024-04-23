@@ -1,0 +1,34 @@
+{
+  "name": "generator-mindset-ui5-ts",
+  "version": "0.0.1",
+  "description": "Mindset's ui5 TypeScript Yeoman generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadaPepMindset/generator-mindset-ui5-ts.git"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "mindset",
+    "typescript",
+    "sap",
+    "ui5",
+    "fiori",
+    "generator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MadaPepMindset/generator-mindset-ui5-ts/issues"
+  },
+  "homepage": "https://github.com/MadaPepMindset/generator-mindset-ui5-ts#readme",
+  "dependencies": {
+    "yeoman-generator": "^7.1.1"
+  }
+}
