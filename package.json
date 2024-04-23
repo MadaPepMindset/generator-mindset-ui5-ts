@@ -2,7 +2,7 @@
   "name": "generator-mindset-ui5-ts",
   "version": "0.0.1",
   "description": "Mindset's ui5 TypeScript Yeoman generator",
-  "main": "index.js",
+  "main": "generators/app/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
