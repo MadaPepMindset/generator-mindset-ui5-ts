@@ -24,6 +24,7 @@ export default class extends Generator {
 
 	prompting() {
 		// Have Yeoman greet the user.
+		
 		if (!this.options.embedded) {
 			this.log(yosay(`Welcome to the ${chalk.red("mindset-ui5-ts")} generator!`));
 		}
@@ -111,7 +112,7 @@ export default class extends Generator {
 				type: "input",
 				name: "author",
 				message: "Who is the author of the application?",
-				default: this.user.git.name()
+				default: "Mindset"
 			},
 			{
 				type: "confirm",
@@ -179,20 +180,20 @@ export default class extends Generator {
 
 	install() {
 		this.config.set("setupCompleted", true);
-		this.spawnCommandSync("npm", ["install"], {
+		this.spawnSync("npm", ["install"], {
 			cwd: this.destinationPath()
 		});
 	}
 
 	end() {
 		if (this.config.get("initrepo")) {
-			this.spawnCommandSync("git", ["init", "--quiet"], {
+			this.spawnSync("git", ["init", "--quiet"], {
 				cwd: this.destinationPath()
 			});
-			this.spawnCommandSync("git", ["add", "."], {
+			this.spawnSync("git", ["add", "."], {
 				cwd: this.destinationPath()
 			});
-			this.spawnCommandSync("git", ["commit", "--quiet", "--allow-empty", "-m", "Initial commit"], {
+			this.spawnSync("git", ["commit", "--quiet", "--allow-empty", "-m", "Initial commit"], {
 				cwd: this.destinationPath()
 			});
 		}
